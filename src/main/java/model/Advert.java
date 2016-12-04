@@ -21,6 +21,11 @@ public class Advert {
     @Column
     private String text;
 
+    public Advert(String title, String text) {
+        this.title = title;
+        this.text = text;
+    }
+
     @Override
     public String toString() {
         return "Advert{" +
