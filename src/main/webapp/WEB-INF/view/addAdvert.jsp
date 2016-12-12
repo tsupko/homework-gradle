@@ -12,8 +12,15 @@
 </head>
 <body>
     <form method="post" action="${pageContext.request.contextPath}/add">
-        <input name="title"/>
-        <textarea name="text"></textarea>
+        <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
+        <label title="Title">
+            <input type="text" name="title"/>
+        </label>
+        <br><br>
+        <label title="Description">
+            <textarea name="text"></textarea>
+        </label>
+        <br><br>
         <input type="submit" value="Submit">
     </form>
 </body>

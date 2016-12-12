@@ -11,6 +11,6 @@
     <title>Main</title>
 </head>
 <body>
-Hello, World!
+Hello, World! <a href="add">Add a new advert...</a>
 </body>
 </html>
